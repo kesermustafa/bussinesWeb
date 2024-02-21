@@ -50,6 +50,14 @@ h6{
     z-index: 1000;
 }
 
+.nav.scrolled{
+    background-color: rgb(232, 229, 229) !important;
+    transition: background-color 200ms linear;
+    box-shadow: 7px 10px 15px rgba(0,0,0,0.3);
+
+}
+
+
 .nav .navbar-toggler{
     display: none;
     border: none;
@@ -246,6 +254,7 @@ h6{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 .service h6{
@@ -315,6 +324,7 @@ h6{
 .pricing{
     display: block ;
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 .pricing h6{
@@ -438,16 +448,245 @@ h6{
 }
 
 
+/* ------- call to -------- */
+
+.callToAct{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0 ), #910AFA), url("assets/images/2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.callToAct .parallax{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.callToAct .parallax h3,
+.callToAct .parallax p{
+    color: #fff;
+}
+
+.callToAct .parallax p{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.callToAct .parallax .call-news{
+    background-color: #fff;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 12px 0 12px 15px;
+    position: relative;
+}
+
+.callToAct .parallax .call-news i{
+    color: #535CF1;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.callToAct .parallax .call-news input{
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.callToAct .parallax .call-news button{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50px;
+}
 
 
+/* ----- CONTACT  ------*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h6{
+    margin-bottom: 3rem;
+}
+
+.contact .form{
+    width: 70%;
+}
+
+.contact .form .first-row, .contact .form .first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.contact .form .first-row input, .contact .form .first-row input{
+    width: 48%;
+    height: 56px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact .form textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1rem;
+}
+
+.contact .form .header-btn{
+    margin: 2rem auto;
+    width: 170px ;
+}
+
+.contact .form .header-btn a{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    outline: none;
+}
 
 
+/* ------ FOOTER ----------*/
+
+footer{
+    background-color: #F4F6F7;
+    padding: 3rem 7rem;
+}
+
+footer .row-one{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
+footer .row-one ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .row-one a{
+    padding-right: 20px;
+    font-size: 26px;
+    color: #6c6c6c;
+}
+
+footer .second-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .second-row h6{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 18px;
+    color: #6c6c6c;
+    padding-bottom: 20px;
+}
+
+footer .second-row li{
+    padding-bottom: 12px;
+}
+
+footer .second-row li a{
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+    color: #121212;
+}
+
+footer .second-row .first-row:last-child{
+    max-width: 300px;
+}
+
+footer .second-row .newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+footer .second-row .newsletter input{
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    background-color: rgba(33,33,33,0.12);
+    font-weight: 500;
+}
+
+footer .second-row .newsletter input::placeholder{
+    opacity: 1;
+    color: #6c6c6c;
+}
 
 
+footer .second-row .newsletter button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    font-size: 20px;
+    color: #121212;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+footer .second-row .first-row .text{
+    margin-top: 1rem;
+    font-size: 14px;
+}
 
+.copyright{
+    background-color: #2b354f;
+    padding: 25px 0;
+    color: #cccccc;
+}
+
+.copyright p{
+    text-align: center;
+}
+
+.copyright p a{
+    color: #d7b5b5;
+}
 
 
 @media screen and (min-width: 1200px) {
@@ -470,27 +709,24 @@ h6{
     .service .service-content .box{
         width: 100%;
         gap: 25px;
-
     }
 
     .service .service-content .service-img{
         width: 100%;
-
     }
 
     .service .service-content .box .brn-one{
-
         flex-direction: column;
-
     }
 
     .nav{
         padding: 1rem 2rem;
-
     }
+
     .nav .menu-bar{
         display: none;
     }
+
     .nav .navbar-social{
         display: none;
     }
@@ -504,6 +740,7 @@ h6{
     .hero-text{
         width: 80%;
     }
+
     .hero-text h3{
         font-size: 2rem;
         line-height: 2.2rem;
@@ -514,6 +751,10 @@ h6{
         font-size: 1rem;
         line-height: 1.5rem;
         margin-bottom: 2rem;
+    }
+
+    .contact .form{
+        width: 98%;
     }
 
 }
