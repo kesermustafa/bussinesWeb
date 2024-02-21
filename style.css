@@ -7,26 +7,40 @@
 
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-a{
+.offset::before {
+    display: block;
+    content: "";
+    height: 10rem;
+    margin-top: -2rem;
+
+}
+
+
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-h3{
+h3 {
     font-size: 44px;
     line-height: 55px;
     color: #121212;
     font-weight: 600;
 }
 
-h6{
+h6 {
     font-size: 20px;
     line-height: 32px;
     color: #6c6c6c;
@@ -37,7 +51,7 @@ h6{
 
 /* ======= NAVBAR =======*/
 
-.nav{
+.nav {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -50,22 +64,22 @@ h6{
     z-index: 1000;
 }
 
-.nav.scrolled{
+.nav.scrolled {
     background-color: rgb(232, 229, 229) !important;
     transition: background-color 200ms linear;
-    box-shadow: 7px 10px 15px rgba(0,0,0,0.3);
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3);
 
 }
 
 
-.nav .navbar-toggler{
+.nav .navbar-toggler {
     display: none;
     border: none;
     outline: none;
 }
 
 
-.nav .navbar-toggler .toggler-icon{
+.nav .navbar-toggler .toggler-icon {
     width: 27px;
     height: 3px;
     background-color: #121212;
@@ -76,66 +90,66 @@ h6{
 }
 
 
-.nav .menu-bar .menu-items{
+.nav .menu-bar .menu-items {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.nav .menu-bar .menu-items li{
+.nav .menu-bar .menu-items li {
     margin: 0 15px;
 }
 
-.nav .menu-bar .menu-items li a{
-   color: #000;
+.nav .menu-bar .menu-items li a {
+    color: #000;
     font-size: 18px;
     font-weight: 600;
 
 }
 
-.nav .menu-bar .menu-items li a:hover{
+.nav .menu-bar .menu-items li a:hover {
     color: #4F47E4;
 }
 
-.nav .navbar-social{
+.nav .navbar-social {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.nav .navbar-social span{
+.nav .navbar-social span {
     font-size: 18px;
     font-weight: 600;
     padding-right: 10px;
     color: #6c6c6c;
 }
 
-.nav .navbar-social ul{
+.nav .navbar-social ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.nav .navbar-social ul li{
+.nav .navbar-social ul li {
     margin: 0 7px;
 }
 
-.nav .navbar-social ul li a{
+.nav .navbar-social ul li a {
     color: #6c6c6c;
     font-size: 22px;
 }
 
-.nav .toggle-menu{
+.nav .toggle-menu {
     display: none;
 }
 
 /* ===== HOME =====*/
 
 
-.back{
+.back {
     background-image: url("assets/images/6.jpg");
     width: 100%;
     height: 120vh;
@@ -144,37 +158,25 @@ h6{
     position: relative;
 }
 
-.back .overlay{
-    background-image: linear-gradient(rgba(232, 237, 255,0.9), rgba(239, 254, 255, 0.9) 40%, rgba(254,255, 244,0.3) 70%, rgba(255, 255, 255, 0.12));
+.back .overlay {
+    background-image: linear-gradient(rgba(232, 237, 255, 0.9), rgba(239, 254, 255, 0.9) 40%, rgba(254, 255, 244, 0.3) 70%, rgba(255, 255, 255, 0.12));
     width: 100%;
     height: 100%;
 }
 
-.back .hero-shape{
+.back .hero-shape {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-.back .hero-shape img{
+.back .hero-shape img {
     width: 100%;
     display: block;
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.hero-text h6{
-    color: #1d1d1d;
-}
-
-.main-btn{
+.main-btn {
     display: inline-block;
     font-weight: 700;
     text-align: center;
@@ -191,64 +193,77 @@ h6{
     z-index: 5;
 }
 
-.hero-text .header-btn{
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h6 {
+    color: #1d1d1d;
+}
+
+
+.hero-text .header-btn {
     margin-top: 22px;
 }
 
-.hero-text .header-btn li{
+.hero-text .header-btn li {
     display: inline-block;
-    margin: 10px 10px 0 0 ;
+    margin: 10px 10px 0 0;
 }
 
-.hero-text .header-btn li a.main-btn{
+.hero-text .header-btn li a.main-btn {
     border-radius: 50px;
     overflow: hidden;
     background-color: #fff;
     border: 0;
     line-height: 50px;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
-.hero-text .header-btn li a.main-btn i{
-    margin-left: 5px ;
+.hero-text .header-btn li a.main-btn i {
+    margin-left: 5px;
     color: #646EE5;
 }
 
-.hero-text .header-btn .brn-one{
+.hero-text .header-btn .brn-one {
     color: #fff;
 }
 
-.hero-text .header-btn .brn-one::before{
+.hero-text .header-btn .brn-one::before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #535CF1, #A147E4 ) ;
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
     z-index: -1;
     transition: all 0.3s ease;
     background-position: right center;
 
 }
 
-.hero-text .header-btn .brn-one:hover::before{
-    background-image: linear-gradient(to left, #535CF1, #A147E4 ) ;
+.hero-text .header-btn .brn-one:hover::before {
+    background-image: linear-gradient(to left, #535CF1, #A147E4);
     background-position: left center;
 }
 
-.hero-text .header-btn .brn-two:hover{
-    box-shadow: 0 3px 25px 0 rgba(0,0,0,0.16);
+.hero-text .header-btn .brn-two:hover {
+    box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
 }
 
 
 /* ----- SERVICE ------*/
 
-#wrapper{
+#wrapper {
     margin: 5rem 7rem 10rem 7rem;
 }
 
-.service{
+.service {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,18 +272,18 @@ h6{
     margin-bottom: 10rem;
 }
 
-.service h6{
-    margin-bottom: 6rem ;
+.service h6 {
+    margin-bottom: 6rem;
 }
 
-.service .service-content{
+.service .service-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.service .service-content .box{
+.service .service-content .box {
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -276,14 +291,14 @@ h6{
     align-items: center;
 }
 
-.service .service-content .box .brn-one{
+.service .service-content .box .brn-one {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   width: 100%;
+    width: 100%;
 }
 
-.service .service-content .box .box-one .service{
+.service .service-content .box .box-one .service {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -292,14 +307,14 @@ h6{
 
 }
 
-.service .service-content .box .box-one .service i{
+.service .service-content .box .box-one .service i {
     font-size: 3rem;
     margin-bottom: 10px;
     color: #535CF1;
 }
 
 
-.service .service-content .box .box-one .service .service-content{
+.service .service-content .box .box-one .service .service-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -307,31 +322,30 @@ h6{
     text-align: justify;
 }
 
-.service .service-content .service-img{
+.service .service-content .service-img {
     width: 40%;
     margin-left: 5%;
 }
 
-.service .service-content .service-img img{
+.service .service-content .service-img img {
     width: 100%;
 }
-
 
 
 /* ------ PRICING  ------*/
 
 
-.pricing{
-    display: block ;
+.pricing {
+    display: block;
     text-align: center;
     margin-bottom: 10rem;
 }
 
-.pricing h6{
+.pricing h6 {
     margin-bottom: 6rem;
 }
 
-.pricing .table{
+.pricing .table {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -340,14 +354,14 @@ h6{
 }
 
 
-.pricing .basic{
-    width: 355px ;
+.pricing .basic {
+    width: 355px;
     height: 100%;
     border: 1px solid #535CF1;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
-.pricing .basic h3{
+.pricing .basic h3 {
     text-align: center;
     font-weight: 300;
     padding: 40px 0;
@@ -358,32 +372,32 @@ h6{
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-.pricing .basic:hover h3{
+.pricing .basic:hover h3 {
     background-image: linear-gradient(to right, #535CF1, #A147E4);
     color: #fff;
     transition: 0.5s;
 }
 
-.pricing .standard h3{
+.pricing .standard h3 {
     background-image: linear-gradient(to right, #535CF1, #A147E4);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     color: #fff;
 }
 
-.pricing .basic .price{
+.pricing .basic .price {
     display: block;
     text-align: center;
     padding: 20px 0;
 }
 
-.pricing .basic .price .sing{
+.pricing .basic .price .sing {
     display: inline-block;
     font-size: 28px;
     font-weight: 400;
     vertical-align: middle;
 }
 
-.pricing .basic .price .currency{
+.pricing .basic .price .currency {
 
     font-size: 60px;
     font-weight: 300;
@@ -393,14 +407,14 @@ h6{
     vertical-align: middle;
 }
 
-.pricing .basic .price .cent{
+.pricing .basic .price .cent {
     display: inline-block;
     font-size: 24px;
     font-weight: 400;
     vertical-align: bottom;
 }
 
-.pricing .basic .price .month{
+.pricing .basic .price .month {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 3px;
@@ -408,24 +422,24 @@ h6{
 }
 
 
-.pricing .basic ul li{
+.pricing .basic ul li {
     border-top: 1px solid #ccc;
     padding: 18px 0;
     border-bottom: 1px solid #ccc;
     color: #7F8c8D;
 }
 
-.pricing .basic ul li i{
+.pricing .basic ul li i {
     color: #535CF1;
     padding-right: 5px;
 }
 
-.pricing .header-btn{
+.pricing .header-btn {
     margin: 2rem auto;
     width: 170px;
 }
 
-.pricing .header-btn a{
+.pricing .header-btn a {
     font-weight: normal;
     font-size: 18px;
     border-radius: 50px;
@@ -435,13 +449,13 @@ h6{
 }
 
 
-.pricing .basic:hover .header-btn a{
+.pricing .basic:hover .header-btn a {
     background-image: linear-gradient(to right, #535CF1, #A147E4);
     border: 1px solid #2ecc71;
     color: #fff;
 }
 
-.pricing .standard .header-btn a{
+.pricing .standard .header-btn a {
     background-image: linear-gradient(to right, #535CF1, #A147E4);
     border: 1px solid #2ecc71;
     color: #fff;
@@ -450,8 +464,8 @@ h6{
 
 /* ------- call to -------- */
 
-.callToAct{
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0 ), #910AFA), url("assets/images/2.jpg");
+.callToAct {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #910AFA), url("assets/images/2.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -461,7 +475,7 @@ h6{
     margin-bottom: 10rem;
 }
 
-.callToAct .parallax{
+.callToAct .parallax {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -470,16 +484,16 @@ h6{
 }
 
 .callToAct .parallax h3,
-.callToAct .parallax p{
+.callToAct .parallax p {
     color: #fff;
 }
 
-.callToAct .parallax p{
+.callToAct .parallax p {
     font-size: 18px;
     padding: 20px 0;
 }
 
-.callToAct .parallax .call-news{
+.callToAct .parallax .call-news {
     background-color: #fff;
     max-width: 450px;
     margin: auto;
@@ -488,19 +502,19 @@ h6{
     position: relative;
 }
 
-.callToAct .parallax .call-news i{
+.callToAct .parallax .call-news i {
     color: #535CF1;
     padding-right: 10px;
     font-size: 20px;
 }
 
-.callToAct .parallax .call-news input{
+.callToAct .parallax .call-news input {
     border: none;
     outline: none;
     font-size: 18px;
 }
 
-.callToAct .parallax .call-news button{
+.callToAct .parallax .call-news button {
     background-image: linear-gradient(to right, #535CF1, #A147E4);
     border: none;
     outline: none;
@@ -514,7 +528,7 @@ h6{
 
 
 /* ----- CONTACT  ------*/
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -522,15 +536,15 @@ h6{
     text-align: center;
 }
 
-.contact h6{
+.contact h6 {
     margin-bottom: 3rem;
 }
 
-.contact .form{
+.contact .form {
     width: 70%;
 }
 
-.contact .form .first-row, .contact .form .first-row{
+.contact .form .first-row, .contact .form .first-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -538,7 +552,7 @@ h6{
     margin: 25px 0;
 }
 
-.contact .form .first-row input, .contact .form .first-row input{
+.contact .form .first-row input, .contact .form .first-row input {
     width: 48%;
     height: 56px;
     border: 1px solid #cbced1;
@@ -548,7 +562,7 @@ h6{
     outline: none;
 }
 
-.contact .form textarea{
+.contact .form textarea {
     width: 100%;
     resize: none;
     border: 1px solid #cbced1;
@@ -560,12 +574,12 @@ h6{
     padding-top: 1rem;
 }
 
-.contact .form .header-btn{
+.contact .form .header-btn {
     margin: 2rem auto;
-    width: 170px ;
+    width: 170px;
 }
 
-.contact .form .header-btn a{
+.contact .form .header-btn a {
     background-image: linear-gradient(to right, #535CF1, #A147E4);
     border: none;
     color: #fff;
@@ -577,36 +591,36 @@ h6{
 
 /* ------ FOOTER ----------*/
 
-footer{
+footer {
     background-color: #F4F6F7;
     padding: 3rem 7rem;
 }
 
-footer .row-one{
+footer .row-one {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 
-footer .row-one ul{
+footer .row-one ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-footer .row-one a{
+footer .row-one a {
     padding-right: 20px;
     font-size: 26px;
     color: #6c6c6c;
 }
 
-footer .second-row{
+footer .second-row {
     display: flex;
     justify-content: space-between;
 }
 
-footer .second-row h6{
+footer .second-row h6 {
     font-size: 1rem;
     font-weight: 700;
     line-height: 18px;
@@ -614,22 +628,22 @@ footer .second-row h6{
     padding-bottom: 20px;
 }
 
-footer .second-row li{
+footer .second-row li {
     padding-bottom: 12px;
 }
 
-footer .second-row li a{
+footer .second-row li a {
     font-size: 1rem;
     line-height: 24px;
     font-weight: 500;
     color: #121212;
 }
 
-footer .second-row .first-row:last-child{
+footer .second-row .first-row:last-child {
     max-width: 300px;
 }
 
-footer .second-row .newsletter{
+footer .second-row .newsletter {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -638,24 +652,24 @@ footer .second-row .newsletter{
     margin-top: 5px;
 }
 
-footer .second-row .newsletter input{
+footer .second-row .newsletter input {
     width: 100%;
     height: 44px;
     border-radius: 50px;
     outline: none;
     border: none;
     padding: 0 20px;
-    background-color: rgba(33,33,33,0.12);
+    background-color: rgba(33, 33, 33, 0.12);
     font-weight: 500;
 }
 
-footer .second-row .newsletter input::placeholder{
+footer .second-row .newsletter input::placeholder {
     opacity: 1;
     color: #6c6c6c;
 }
 
 
-footer .second-row .newsletter button{
+footer .second-row .newsletter button {
     position: absolute;
     top: 0;
     right: 0;
@@ -669,31 +683,314 @@ footer .second-row .newsletter button{
     cursor: pointer;
 }
 
-footer .second-row .first-row .text{
+footer .second-row .first-row .text {
     margin-top: 1rem;
     font-size: 14px;
 }
 
-.copyright{
+.copyright {
     background-color: #2b354f;
     padding: 25px 0;
     color: #cccccc;
 }
 
-.copyright p{
+.copyright p {
     text-align: center;
 }
 
-.copyright p a{
+.copyright p a {
     color: #d7b5b5;
 }
 
 
 @media screen and (min-width: 1200px) {
-    .service .service-content .service-img{
+    .service .service-content .service-img {
         margin-left: 15%;
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+
+    .nav {
+        padding: 1rem 3rem;
+    }
+
+    .nav .navbar-social {
+        display: none;
+    }
+
+    .hero-text {
+        width: 60%;
+    }
+
+    .hero-text h3 {
+        font-size: 33px;
+    }
+
+    #wrapper {
+        margin: 3rem 3rem 10rem 3rem;
+    }
+
+    .service {
+        margin-bottom: 3rem;
+    }
+
+    .service h6 {
+        margin-bottom: 3rem;
+    }
+
+    .service .service-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .service .service-content .box {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .service .service-content .box .brn-one {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service .service-content .service-img {
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+
+    .service .service-content .service-img img {
+        width: 100%;
+    }
+
+    .pricing .table {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .pricing .basic {
+        margin-bottom: 3rem;
+    }
+
+
+    .callToAct {
+        margin-bottom: 5rem;
+    }
+
+    .callToAct .parallax {
+        width: 80%;
+    }
+
+    .contact .form {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 774px) {
+
+    .nav {
+        padding: 0.7rem 1rem;
+    }
+
+    .nav .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 1000;
+    }
+
+    .nav .menu-bar {
+        position: fixed;
+        top: 0;
+        right: -360px;
+        width: 180px;
+        height: 400px;
+        background-color: rgb(232, 229, 229);
+        transition: all 0.6s ease;
+    }
+
+    .nav .menu-bar .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 70px 0;
+    }
+
+    .nav .menu-bar .menu-items li {
+        margin: 1.5rem 30px;
+    }
+
+    .hero-text {
+        width: 80%;
+    }
+
+    .hero-text h6 {
+        font-size: 16px;
+    }
+
+    #wrapper {
+        margin: 3rem 1rem 10rem 1rem;
+    }
+
+    .service h3 {
+        font-size: 33px;
+    }
+
+    .service h6 {
+        font-size: 16px;
+    }
+
+    .service .service-content .service-img {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+
+    .pricing h3 {
+        font-size: 33px;
+    }
+
+    .pricing h6 {
+        font-size: 16px;
+    }
+
+    .pricing .table {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .pricing .basic {
+        margin-bottom: 3rem;
+    }
+
+    .callToAct .parallax {
+        width: 90%;
+    }
+
+    .callToAct .parallax h3 {
+        font-size: 33px;
+    }
+
+    .callToAct .parallax h6 {
+        font-size: 16px;
+    }
+
+    .callToAct .parallax .call-news input {
+        font-size: 16px;
+    }
+
+    .callToAct .parallax .call-news button {
+        font-size: 15px;
+    }
+
+    .contact h3 {
+        font-size: 33px;
+    }
+
+    .contact h6 {
+        font-size: 16px;
+    }
+
+    .contact .form {
+        width: 90%;
+    }
+
+    .contact .form .header-btn a {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 4rem 10px;
+    }
+
+    footer .second-row {
+        flex-wrap: wrap;
+    }
+
+    footer .second-row .first-row {
+        margin-bottom: 1.3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 541px) {
+
+
+    .nav {
+        padding: 0.7rem 1rem;
+    }
+
+    .nav .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 1000;
+    }
+
+    .nav .menu-bar {
+        position: fixed;
+        top: 0;
+        right: -360px;
+        width: 180px;
+        height: 400px;
+        background-color: rgb(232, 229, 229);
+        transition: all 0.6s ease;
+    }
+
+    .nav .menu-bar .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 70px 0;
+    }
+
+    .nav .menu-bar .menu-items li {
+        margin: 1.5rem 30px;
+    }
+
+    footer{
+        height: 100vh;
+        padding: 10px 0;
+    }
+
+    footer .second-row{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    footer .second-row .first-row li{
+        padding: 1px;
+    }
+
+    body > div.nav.scrolled > a > img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav.scrolled{
+
+        align-items: center;
+    }
+}
+
+
+
+/*
 
 
 @media screen and (max-width: 560px){
@@ -759,3 +1056,4 @@ footer .second-row .first-row .text{
 
 }
 
+*/
