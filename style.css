@@ -986,74 +986,18 @@ footer .second-row .first-row .text {
 
         align-items: center;
     }
+
+    .callToAct .parallax .call-news{
+        text-align: left;
+    }
+    .callToAct .parallax .call-news button{
+        font-size: 14px;
+        padding: 10px 15px;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+    }
 }
 
 
-
-/*
-
-
-@media screen and (max-width: 560px){
-
-    #wrapper{
-        margin: 5rem 2rem 5rem 2rem;
-    }
-
-    .service .service-content{
-        flex-direction: column-reverse;
-    }
-
-    .service .service-content .box{
-        width: 100%;
-        gap: 25px;
-    }
-
-    .service .service-content .service-img{
-        width: 100%;
-    }
-
-    .service .service-content .box .brn-one{
-        flex-direction: column;
-    }
-
-    .nav{
-        padding: 1rem 2rem;
-    }
-
-    .nav .menu-bar{
-        display: none;
-    }
-
-    .nav .navbar-social{
-        display: none;
-    }
-
-    .nav .fa-solid{
-        font-size: 2rem;
-        color: #6c6c6c;
-        display: block !important;
-    }
-
-    .hero-text{
-        width: 80%;
-    }
-
-    .hero-text h3{
-        font-size: 2rem;
-        line-height: 2.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .hero-text h6{
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .contact .form{
-        width: 98%;
-    }
-
-}
-
-*/
